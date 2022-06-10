@@ -11,8 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-app.use('/api/goals', require('./routes/goalRoutes'))
-
+app.use('/api/goals', require('./routes/goalRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
 
 // TODO: debug error overwriting issue
 app.use(errorHandler);
