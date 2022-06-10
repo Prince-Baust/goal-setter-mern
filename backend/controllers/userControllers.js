@@ -72,9 +72,16 @@ const loginUser = asyncHandler(async (req, res) => {
 
 // @desc      Get user data
 // @route     GET /api/users/me
-// @access    Public
+// @access    Private
 const getMe = asyncHandler(async (req, res) => {
-  res.json({message: 'Display user data!'});
+  const {_id, name, email} = await User.findById(req.user.id);
+
+  res.status(200).json({
+    id: _id,
+    name,
+    email
+  })
+
 });
 
 
