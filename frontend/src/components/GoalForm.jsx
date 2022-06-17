@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState} from "react";
 import {useDispatch} from "react-redux";
+import {createGoal} from "../features/goals/goalSlice";
 
 const GoalForm = () => {
   const dispatch = useDispatch();
