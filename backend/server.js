@@ -19,7 +19,10 @@ app.use('/api/users', require('./routes/userRoutes'));
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../frontend/build')))
 
-  app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, '../', 'frontend', 'build', 'index.html')))
+  app.get('*',
+    (req, res) =>
+      res.sendFile(path.resolve(__dirname, '../', 'frontend', 'build', 'index.html'))
+  )
 } else {
   app.get('/', (req, res) => res.send('Please set to production'))
 }
@@ -27,4 +30,4 @@ if (process.env.NODE_ENV === 'production') {
 // TODO: debug error overwriting issue
 app.use(errorHandler);
 
-app.listen(port, ()=> console.log(`Server started at ${port}`));
+app.listen(port, () => console.log(`Server started at ${port}`));

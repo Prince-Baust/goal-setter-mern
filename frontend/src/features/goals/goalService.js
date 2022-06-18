@@ -10,8 +10,7 @@ const createGoal = async (goalData, token) => {
     }
   }
 
-  const response = axios.post(API_URL, goalData, config);
-
+  const response = await axios.post(API_URL, goalData, config);
   return response.data;
 
 }
@@ -38,7 +37,8 @@ const deleteGoal = async (id, token) => {
     }
   }
 
-  const response = await axios.delete(API_URL + id, config)
+  const response = await axios.delete(API_URL + id, config);
+  return response.data
 }
 
 
