@@ -1,6 +1,6 @@
 import React from 'react';
 import {useEffect} from "react";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from 'react-router-dom'
 import {useDispatch, useSelector} from "react-redux";
 import GoalForm from "../components/GoalForm";
 import Spinner from "../components/Spinner";
@@ -18,8 +18,9 @@ const Dashboard = () => {
     if (isError)
       console.log(message);
 
-    if (!user)
+    if (!user) {
       navigate('/login')
+    }
 
     dispatch(getGoals());
 
@@ -33,7 +34,7 @@ const Dashboard = () => {
   return (
     <>
       <section className="heading">
-        <h1>Welcome, {user.name}</h1>
+        <h1>Welcome, {user && user.name}</h1>
         <p>Goals Dashboard</p>
       </section>
 
