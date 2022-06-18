@@ -10,12 +10,10 @@ Live Site Link: [goal-setter-mah.herokuapp.com](goal-setter-mah.herokuapp.com/)
 ### Screenshots
 
 <div align="center"> 
-<sub>Login Page</sub>
-  <img src="screenshots/img1.png" alt="screenshot" />
-<sub>Register Page</sub>
-<img src="screenshots/img2.png" alt="screenshot" />
-<sub>Dashboard</sub>
-<img src="screenshots/img3.png" alt="screenshot" />
+<p>Login Page</p>
+  <img width="600" height="500" src="screenshots/img1.png" alt="screenshot"/>
+<p>Dashboard</p>
+<img width="600" height="500" src="screenshots/img3.png" alt="screenshot" />
 </div>
 
 
