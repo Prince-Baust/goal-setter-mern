@@ -26,6 +26,7 @@ Live Site Link: [goal-setter-mah.herokuapp.com](goal-setter-mah.herokuapp.com/)
     <li>CSS3</li>
     <li>React.js</li>
     <li>Redux</li>
+    <li>Axios</li>
   </ul>
 </details>
 
@@ -34,6 +35,7 @@ Live Site Link: [goal-setter-mah.herokuapp.com](goal-setter-mah.herokuapp.com/)
   <ul>
     <li>NodeJS</li>
     <li>Express.js</li>
+    <li>JWT</li>
   </ul>
 </details>
 
